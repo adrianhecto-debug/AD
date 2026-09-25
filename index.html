@@ -250,6 +250,72 @@
 			color: var(--accent);
 		}
 
+		.education-table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		.education-table tr {
+			border-top: 1px solid var(--line);
+		}
+
+		.education-table tr:last-child {
+			border-bottom: 1px solid var(--line);
+		}
+
+		.education-table td {
+			padding: 24px 12px;
+			vertical-align: top;
+		}
+
+		.education-table .level {
+			font-size: 1.15rem;
+			width: 25%;
+		}
+
+		.education-table .details {
+			display: block;
+			width: 55%;
+		}
+
+		.school-name {
+			font-size: 1.15rem;
+		}
+
+		.address,
+		.program,
+		.year {
+			color: var(--muted);
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: .82rem;
+		}
+
+		.program {
+			margin-top: 4px;
+		}
+
+		.address {
+			margin-top: 8px;
+		}
+
+		.year {
+			text-align: right;
+			white-space: nowrap;
+			width: 20%;
+		}
+
+		.tertiary-badge {
+			border: 1px solid var(--accent);
+			color: var(--accent-dark);
+			display: inline-block;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: .7rem;
+			letter-spacing: .06em;
+			margin-top: 12px;
+			padding: 5px 8px;
+			text-transform: uppercase;
+		}
+
 		footer {
 			border-top: 1px solid var(--line);
 			color: var(--muted);
@@ -316,6 +382,26 @@
 				gap: 12px;
 				flex-direction: column;
 			}
+
+			.education-table,
+			.education-table tbody,
+			.education-table tr,
+			.education-table td {
+				display: block;
+				width: 100%;
+			}
+
+			.education-table td {
+				padding: 8px 0;
+			}
+
+			.education-table tr {
+				padding: 18px 0;
+			}
+
+			.education-table .year {
+				text-align: left;
+			}
 		}
 	</style>
 </head>
@@ -325,6 +411,7 @@
 			<a class="brand" href="#top">Adrian Kim .</a>
 			<nav aria-label="Main navigation">
 				<a href="#about">About</a>
+				<a href="#education">Education</a>
 				<a href="#contact">Contact</a>
 			</nav>
 		</header>
@@ -350,7 +437,7 @@
 
 			<section id="about">
 				<div class="section-heading">
-					<p class="eyebrow">01 / About</p>
+					<p class="eyebrow">02 / About</p>
 					<p class="section-copy">I work across product design, front-end development, and creative direction. The best work is useful, distinctive, and easy to understand.</p>
 				</div>
 				<div class="details">
@@ -373,14 +460,60 @@
 				</div>
 			</section>
 
+			<section id="education">
+				<div class="section-heading">
+					<p class="eyebrow">03 / Education</p>
+					<p class="section-copy">My academic path from primary school to my current studies in information technology.</p>
+				</div>
+				<table class="education-table">
+					<tbody>
+						<tr>
+							<td class="level">Primary Level</td>
+							<td class="details">
+								<div class="school-name">San Rafael Elementary</div>
+								<div class="address">San Rafael, Dulag, Leyte</div>
+							</td>
+							<td class="year">2012-2018</td>
+						</tr>
+						<tr>
+							<td class="level">Junior High</td>
+							<td class="details">
+								<div class="school-name">San Jose National High School</div>
+								<div class="address">San Jose, Dulag, Leyte</div>
+							</td>
+							<td class="year">2018-2022</td>
+						</tr>
+						<tr>
+							<td class="level">Senior High</td>
+							<td class="details">
+								<div class="school-name">San Jose Senior High School</div>
+								<div class="program">General Academic Strand (GAS)</div>
+								<div class="address">San Jose, Dulag, Leyte</div>
+							</td>
+							<td class="year">2022-2024</td>
+						</tr>
+						<tr>
+							<td class="level">Tertiary Level</td>
+							<td class="details">
+								<div class="school-name">Eastern Visayas State University - Dulag Campus</div>
+								<div class="program">Bachelor of Science in Information Technology</div>
+								<div class="address">Dulag, Leyte</div>
+								<span class="tertiary-badge">Currently Enrolled</span>
+							</td>
+							<td class="year">Present</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
 			<section class="contact" id="contact">
 				<div>
-					<p class="eyebrow">02 / Contact</p>
+					<p class="eyebrow">04 / Contact</p>
 					<h2>number: 09352436155</h2>
                     <h2>email: adrian.hecto@evsu.edu.ph</h2>
                     <h2>tiktok: adriankim</h2>
 				</div>
-				<a class="email" href="mailto:hello@adriankim.dev">hello@adriankim.dev</a>
+				<a class="email" href="mailto:adrian.hecto@evsu.edu.ph">adrian.hecto@evsu.edu.ph</a>
 			</section>
 		</main>
 
